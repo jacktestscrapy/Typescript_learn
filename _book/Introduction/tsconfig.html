@@ -1,0 +1,672 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.Tsconfig详解 · TypeScript入门教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="赵彦伟<panda_kings@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="webpack&ts.html" />
+    
+    
+    <link rel="prev" href="快速入门.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    课程简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="快速入门.html">
+            
+                <a href="快速入门.html">
+            
+                    
+                    第一章:Typescript快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="tsconfig.html">
+            
+                <a href="tsconfig.html">
+            
+                    
+                    1.Tsconfig详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="webpack&ts.html">
+            
+                <a href="webpack&ts.html">
+            
+                    
+                     2.Webpack打包ts代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../BasicTypes/basetype.html">
+            
+                <a href="../BasicTypes/basetype.html">
+            
+                    
+                    第二章: 基础类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    第三章: 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Classes/class.html">
+            
+                <a href="../Classes/class.html">
+            
+                    
+                    第四章: 类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Classes/inheritance.html">
+            
+                <a href="../Classes/inheritance.html">
+            
+                    
+                    1. 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Classes/modifiers.html">
+            
+                <a href="../Classes/modifiers.html">
+            
+                    
+                    2.常用修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Classes/abstract.html">
+            
+                <a href="../Classes/abstract.html">
+            
+                    
+                    3.抽象类和类方法重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../interface.html">
+            
+                <a href="../interface.html">
+            
+                    
+                    第五章:接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../generics.html">
+            
+                <a href="../generics.html">
+            
+                    
+                    第六章: 泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../namespace.html">
+            
+                <a href="../namespace.html">
+            
+                    
+                    第七章: 模块和命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../decorators.html">
+            
+                <a href="../decorators.html">
+            
+                    
+                    第八章:装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.Tsconfig详解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tsconfigjson&#x8BE6;&#x89E3;">Tsconfig.json&#x8BE6;&#x89E3;</h1>
+<h2 id="&#x4E00;&#x3001;&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;tsconfigjson">&#x4E00;&#x3001;&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;tsconfig.json</h2>
+<p>&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>tsc</code> &#x547D;&#x4EE4;&#x6765;&#x7F16;&#x8BD1;&#x5C11;&#x91CF; TypeScript &#x6587;&#x4EF6;,&#x4F46;&#x5982;&#x679C;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x5F88;&#x5C11;&#x662F;&#x53EA;&#x6709;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; tsconfig.json &#x6587;&#x4EF6;&#xFF0C;&#x5C06;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x914D;&#x7F6E;&#x90FD;&#x5199;&#x8FDB; tsconfig.json &#x6587;&#x4EF6;&#xFF0C;<strong>&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x7528;&#x6BCF;&#x6B21;&#x7F16;&#x8BD1;&#x90FD;&#x624B;&#x52A8;&#x8F93;&#x5165;&#x914D;&#x7F6E;&#xFF0C;&#x53E6;&#x5916;&#x4E5F;&#x65B9;&#x4FBF;&#x56E2;&#x961F;&#x534F;&#x4F5C;&#x5F00;&#x53D1;.</strong></p>
+<h2 id="&#x4E8C;&#x3001;&#x4EC0;&#x4E48;&#x662F;tsconfigjson">&#x4E8C;&#x3001;&#x4EC0;&#x4E48;&#x662F;tsconfig.json</h2>
+<p>TypeScript &#x4F7F;&#x7528; tsconfig.json &#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x5176;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x5B58;&#x5728; tsconfig.json &#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x8BA4;&#x4E3A;&#x8BE5;&#x76EE;&#x5F55;&#x4E3A; TypeScript &#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x3002;&#x901A;&#x5E38; tsconfig.json &#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E24;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#xFF1A;<strong>&#x6307;&#x5B9A;&#x5F85;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;</strong>&#x548C;<strong>&#x5B9A;&#x4E49;&#x7F16;&#x8BD1;&#x9009;&#x9879;</strong>&#x3002;&#x5F85;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x901A;&#x8FC7;files&#x3001;include&#x3001;exclude&#x8FDB;&#x884C;&#x63A7;&#x5236;.</p>
+<p>tsconfig.json &#x6587;&#x4EF6;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x9876;&#x5C42;&#x5C5E;&#x6027;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">compileOnSave</td>
+<td style="text-align:center"><strong>&#x8BBE;&#x7F6E;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x81EA;&#x52A8;&#x7F16;&#x8BD1;&#xFF0C;&#x4F46;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x5668;&#x652F;&#x6301;</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">compilerOptions</td>
+<td style="text-align:center"><strong>&#x914D;&#x7F6E;&#x7F16;&#x8BD1;&#x9009;&#x9879;.</strong> &#x6B64;&#x9879;&#x975E;&#x5E38;&#x91CD;&#x8981;.</td>
+</tr>
+<tr>
+<td style="text-align:center">exclude</td>
+<td style="text-align:center"><strong>&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x5668;&#x9700;&#x8981;&#x6392;&#x9664;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#x5939;</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">extends</td>
+<td style="text-align:center"><strong>&#x5F15;&#x5165;&#x5176;&#x4ED6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x7EE7;&#x627F;&#x914D;&#x7F6E;</strong>&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">files</td>
+<td style="text-align:center"><strong>&#x6307;&#x5B9A;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x7684;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x5217;&#x8868;</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">include</td>
+<td style="text-align:center"><strong>&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;</strong>&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center">references</td>
+<td style="text-align:center"><strong>&#x6307;&#x5B9A;&#x5DE5;&#x7A0B;&#x5F15;&#x7528;&#x4F9D;&#x8D56;</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">typeAcquisition</td>
+<td style="text-align:center"><strong>&#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x5F15;&#x5165;&#x5E93;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;</strong>(.d.ts)&#x76F8;&#x5173;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x5982;&#x4E0D;&#x8BBE;&#x5B9A; <code>files</code> &#x548C; <code>include</code>&#xFF0C;ts &#x9ED8;&#x8BA4;&#x662F; <code>exclude</code> &#x4EE5;&#x5916;&#x7684;&#x6240;&#x6709;&#x7684;&#x4EE5; <code>.ts</code> &#x548C; <code>.tsx</code> &#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#xFF0C;&#x540C;&#x65F6;&#x8BBE;&#x7F6E; <code>files</code> &#x7684;&#x4F18;&#x5148;&#x7EA7;&#x6700;&#x9AD8;&#xFF0C;<code>exclude</code> &#x6B21;&#x4E4B;&#xFF0C;<code>include</code> &#x6700;&#x4F4E;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;&#x914D;&#x7F6E;&#x4ECB;&#x7ECD;">&#x4E09;&#x3001;&#x914D;&#x7F6E;&#x4ECB;&#x7ECD;</h2>
+<h3 id="1compileonsave">1.compileOnSave</h3>
+<p>compileOnSave&#x5982;&#x679C;&#x8BBE;&#x4E3A;true,&#x5728;&#x6211;&#x4EEC;&#x7F16;&#x8F91;&#x4E86;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7F16;&#x8F91;&#x5668;&#x4F1A;&#x6839;&#x636E;tsconfig.json&#x7684;&#x914D;&#x7F6E;&#x66F4;&#x65B0;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x6587;&#x672C;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E2A;&#x7F16;&#x8F91;&#x5668;&#x652F;&#x6301;</p>
+<pre><code class="lang-json"><span class="hljs-comment">// tsconfig.json</span>
+{
+  <span class="hljs-string">&quot;compileOnSave&quot;</span>: <span class="hljs-literal">true</span>/<span class="hljs-literal">false</span>
+}
+</code></pre>
+<h3 id="2-exclude">2. exclude</h3>
+<p>exclude&#x8868;&#x793A;&#x8981;&#x6392;&#x9664;&#x7684;&#x3001;&#x4E0D;&#x7F16;&#x8BD1;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x6216;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;.</p>
+<p>&#x652F;&#x6301;&#x7684;&#x901A;&#x914D;&#x7B26;:</p>
+<ul>
+<li>*&#x5339;&#x914D;0&#x6216;&#x591A;&#x4E2A;&#x4EFB;&#x610F;&#x5B57;&#x7B26;</li>
+<li>?&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x4EFB;&#x610F;&#x5B57;&#x7B26;</li>
+<li>**/&#x9012;&#x5F52;&#x5339;&#x914D;&#x4EFB;&#x610F;&#x5B50;&#x76EE;&#x5F55;</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;exclude&quot;</span>: [
+    <span class="hljs-string">&quot;src/lib&quot;</span>, <span class="hljs-comment">// &#x6392;&#x9664;src&#x76EE;&#x5F55;&#x4E0B;&#x7684;lib&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x4F1A;&#x7F16;&#x8BD1;</span>
+    <span class="hljs-string">&quot;src/**/*&quot;</span> <span class="hljs-comment">// &#x5339;&#x914D;src&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4EFB;&#x610F;&#x5B50;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x6587;&#x4EF6;</span>
+  ]
+}
+</code></pre>
+<h3 id="3extends">3.extends</h3>
+<p>extends&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5176;&#x4ED6;&#x7684;tsconfig.json&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x6765;&#x7EE7;&#x627F;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x91CC;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x7EE7;&#x627F;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x914D;&#x7F6E;&#x4F1A;&#x8986;&#x76D6;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5B9A;&#x4E49;&#x7684;&#x914D;&#x7F6E;.TS&#x5728;3.2&#x7248;&#x672C;&#x5F00;&#x59CB;&#xFF0C;&#x652F;&#x6301;&#x7EE7;&#x627F;&#x4E00;&#x4E2A;&#x6765;&#x81EA;Node.js&#x5305;&#x7684;tsconfig.json&#x914D;&#x7F6E;&#x6587;&#x4EF6;.</p>
+<pre><code class="lang-json">{
+  <span class="hljs-comment">// &#x628A;&#x57FA;&#x7840;&#x914D;&#x7F6E;&#x62BD;&#x79BB;&#x6210;tsconfig.base.json&#x6587;&#x4EF6;,&#x7136;&#x540E;&#x5F15;&#x5165;</span>
+  <span class="hljs-string">&quot;extends&quot;</span>: <span class="hljs-string">&quot;./tsconfig.base.json&quot;</span> 
+}
+</code></pre>
+<h3 id="4-files">4. files</h3>
+<p>files&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5217;&#x8868;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x76F8;&#x5BF9;&#x6216;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5728;&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x4F1A;&#x7F16;&#x8BD1;&#x5305;&#x542B;&#x5728;files&#x4E2D;&#x5217;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x53D6;&#x51B3;&#x4E8E;&#x6709;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;include&#x9009;&#x9879;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;include&#x9009;&#x9879;&#xFF0C;&#x5219;<strong>&#x9ED8;&#x8BA4;&#x4F1A;&#x7F16;&#x8BD1;&#x6839;&#x76EE;&#x5F55;&#x4EE5;&#x53CA;&#x6240;&#x6709;&#x5B50;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6587;&#x4EF6;</strong>&#x3002;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x7684;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x662F;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<em> ? *</em>/ &#x7B49;&#x901A;&#x914D;&#x7B26;.</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;files&quot;</span>: [
+    <span class="hljs-comment">//&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#x662F;src&#x76EE;&#x5F55;&#x4E0B;&#x7684;helloworld.ts&#x6587;&#x4EF6;</span>
+    <span class="hljs-string">&quot;src/helloworld.ts&quot;</span>
+  ]
+}
+</code></pre>
+<h3 id="5-include">5. include</h3>
+<p>include&#x4E5F;&#x53EF;&#x4EE5;<strong>&#x6307;&#x5B9A;&#x8981;&#x7F16;&#x8BD1;&#x7684;&#x8DEF;&#x5F84;&#x5217;&#x8868;</strong>&#xFF0C;&#x4F46;&#x662F;&#x548C;files&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x8DEF;&#x5F84;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x548C;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;.</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;include&quot;</span>:[
+    <span class="hljs-comment">// &#x7F16;&#x8BD1;src &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;,&#x5305;&#x62EC;&#x5B50;&#x76EE;&#x5F55;</span>
+    <span class="hljs-string">&quot;src&quot;</span>, 
+    <span class="hljs-comment">// &#x53EA;&#x4F1A;&#x7F16;&#x8BD1;src&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4E00;&#x7EA7;&#x5B50;&#x76EE;&#x5F55;</span>
+    <span class="hljs-string">&quot;src/*&quot;</span>,
+    <span class="hljs-comment">// &#x7F16;&#x8BD1;src &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4E00;&#x7EA7;&#x5B50;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;</span>
+    <span class="hljs-string">&quot;src/*/*&quot;</span>
+  ]
+}
+</code></pre>
+<h3 id="6-references">6. references</h3>
+<p>References &#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x6307;&#x5B9A;&#x8981;&#x5F15;&#x7528;&#x7684;&#x9879;&#x76EE;. &#x5728;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5C06;&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x548C;&#x540E;&#x7AEF;<code>node</code>&#x9879;&#x76EE;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x5F00;&#x53D1;&#xFF0C;&#x4E24;&#x4E2A;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x540C;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x548C;&#x901A;&#x7528;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x524D;&#x540E;&#x7AEF;&#x9879;&#x76EE;&#x8FDB;&#x884C;&#x7075;&#x6D3B;&#x7684;&#x5206;&#x522B;&#x6253;&#x5305;,&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;references&quot;</span>:[
+    <span class="hljs-comment">//&#x6307;&#x5B9A;&#x4F9D;&#x8D56;&#x7684;&#x5DE5;&#x7A0B;</span>
+    {<span class="hljs-string">&quot;path&quot;</span>: <span class="hljs-string">&quot;./common&quot;</span>}
+  ]
+}
+</code></pre>
+<h3 id="7--typeacquisition">7.  typeAcquisition</h3>
+<p> <code>typeAcquisition</code> &#x5C5E;&#x6027;&#x4F5C;&#x7528;&#x662F;<strong>&#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x5F15;&#x5165;&#x5E93;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;(.d.ts)&#x76F8;&#x5173;</strong>.&#x5305;&#x542B; 3 &#x4E2A;&#x5B50;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li><code>enable</code> : &#x5E03;&#x5C14;&#x7C7B;&#x578B;&#xFF0C;&#x662F;&#x5426;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x5F15;&#x5165;&#x5E93;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;(.d.ts)&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false&#xFF1B;</li>
+<li><code>include</code> : &#x6570;&#x7EC4;&#x7C7B;&#x578B;&#xFF0C;&#x5141;&#x8BB8;&#x81EA;&#x52A8;&#x5F15;&#x5165;&#x7684;&#x5E93;&#x540D;&#xFF0C;&#x5982;&#xFF1A;[&quot;jquery&quot;, &quot;lodash&quot;]&#xFF1B;</li>
+<li><code>exculde</code> : &#x6570;&#x7EC4;&#x7C7B;&#x578B;&#xFF0C;&#x6392;&#x9664;&#x7684;&#x5E93;&#x540D;&#x3002;</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;typeAcquistion&quot;</span>:{
+    <span class="hljs-comment">// &#x4E0D;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x5F15;&#x5165;&#x5E93;&#x7C7B;&#x578B;</span>
+    <span class="hljs-string">&quot;enable&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-comment">// &#x5141;&#x8BB8;&#x81EA;&#x52A8;&#x5F15;&#x5165;&#x7684;&#x5E93;</span>
+    <span class="hljs-string">&quot;include&quot;</span>: [<span class="hljs-string">&quot;jquery&quot;</span>,<span class="hljs-string">&quot;lodash&quot;</span>],
+    <span class="hljs-comment">// &#x6392;&#x9664;&#x7684;&#x5E93;</span>
+    <span class="hljs-string">&quot;exclude&quot;</span>: [<span class="hljs-string">&quot;jest&quot;</span>,<span class="hljs-string">&quot;koa&quot;</span>]
+
+  }
+}
+</code></pre>
+<h3 id="8-compileroptions">8. <strong>compilerOptions</strong></h3>
+<p>compilerOptions&#x914D;&#x7F6E;&#x7F16;&#x8BD1;&#x76F8;&#x5173;&#x7684;&#x9009;&#x9879;.&#x82E5; <code>compilerOptions</code> &#x5C5E;&#x6027;&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x5219;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;.</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;compilerOptions&quot;</span>: {
+    <span class="hljs-comment">/* &#x57FA;&#x7840;&#x9009;&#x9879; */</span>
+    <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;es5&quot;</span> <span class="hljs-comment">/* target&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x4E4B;&#x540E;&#x7684;&#x7248;&#x672C;&#x76EE;&#x6807;: &apos;ES3&apos; (default), &apos;ES5&apos;, &apos;ES2015&apos;, &apos;ES2016&apos;, &apos;ES2017&apos;, &apos;ES2018&apos;, &apos;ES2019&apos; or &apos;ESNEXT&apos;. */</span>,
+    <span class="hljs-string">&quot;module&quot;</span>: <span class="hljs-string">&quot;commonjs&quot;</span> <span class="hljs-comment">/* &#x7528;&#x6765;&#x6307;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5757;&#x6807;&#x51C6;: &apos;none&apos;, &apos;commonjs&apos;, &apos;amd&apos;, &apos;system&apos;, &apos;umd&apos;, &apos;es2015&apos;, or &apos;ESNext&apos;. */</span>,
+    <span class="hljs-string">&quot;lib&quot;</span>: [<span class="hljs-string">&quot;es6&quot;</span>, <span class="hljs-string">&quot;dom&quot;</span>] <span class="hljs-comment">/* lib&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x8981;&#x5305;&#x542B;&#x5728;&#x7F16;&#x8BD1;&#x4E2D;&#x7684;&#x5E93;&#x6587;&#x4EF6; */</span>,
+    <span class="hljs-string">&quot;allowJs&quot;</span>: <span class="hljs-literal">true</span>,                       <span class="hljs-comment">/* allowJs&#x8BBE;&#x7F6E;&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x7F16;&#x8BD1;js&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;false&#xFF0C;&#x5373;&#x4E0D;&#x7F16;&#x8BD1;js&#x6587;&#x4EF6; */</span>
+    <span class="hljs-string">&quot;checkJs&quot;</span>: <span class="hljs-literal">true</span>,                       <span class="hljs-comment">/* checkJs&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x68C0;&#x67E5;&#x548C;&#x62A5;&#x544A;js&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;false */</span>
+    <span class="hljs-string">&quot;jsx&quot;</span>: <span class="hljs-string">&quot;preserve&quot;</span>,                     <span class="hljs-comment">/* &#x6307;&#x5B9A;jsx&#x4EE3;&#x7801;&#x7528;&#x4E8E;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;: &apos;preserve&apos;, &apos;react-native&apos;, or &apos;react&apos;. */</span>
+    <span class="hljs-string">&quot;declaration&quot;</span>: <span class="hljs-literal">true</span>,                   <span class="hljs-comment">/* declaration&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5728;&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x5019;&#x751F;&#x6210;&#x76F8;&#x5E94;&#x7684;&quot;.d.ts&quot;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x4E3A;true&#xFF0C;&#x7F16;&#x8BD1;&#x6BCF;&#x4E2A;ts&#x6587;&#x4EF6;&#x4E4B;&#x540E;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;js&#x6587;&#x4EF6;&#x548C;&#x4E00;&#x4E2A;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x3002;&#x4F46;&#x662F;declaration&#x548C;allowJs&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x8BBE;&#x4E3A;true */</span>
+    <span class="hljs-string">&quot;declarationMap&quot;</span>: <span class="hljs-literal">true</span>,                <span class="hljs-comment">/* &#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x4E3A;&#x58F0;&#x660E;&#x6587;&#x4EF6;.d.ts&#x751F;&#x6210;map&#x6587;&#x4EF6; */</span>
+    <span class="hljs-string">&quot;sourceMap&quot;</span>: <span class="hljs-literal">true</span>,                     <span class="hljs-comment">/* sourceMap&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x65F6;&#x662F;&#x5426;&#x751F;&#x6210;.map&#x6587;&#x4EF6; */</span>
+    <span class="hljs-string">&quot;outFile&quot;</span>: <span class="hljs-string">&quot;./&quot;</span>,                       <span class="hljs-comment">/* outFile&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5C06;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x7684;&#x503C;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x540D;&#x3002;&#x6BD4;&#x5982;&#x8BBE;&#x7F6E;&#x4E3A;&quot;./dist/main.js&quot;&#xFF0C;&#x5219;&#x8F93;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x4E3A;&#x4E00;&#x4E2A;main.js&#x6587;&#x4EF6;&#x3002;&#x4F46;&#x662F;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x6709;&#x8BBE;&#x7F6E;module&#x7684;&#x503C;&#x4E3A;amd&#x548C;system&#x6A21;&#x5757;&#x65F6;&#x624D;&#x652F;&#x6301;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E; */</span>
+    <span class="hljs-string">&quot;outDir&quot;</span>: <span class="hljs-string">&quot;./&quot;</span>,                        <span class="hljs-comment">/* outDir&#x7528;&#x6765;&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x503C;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8F93;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x90FD;&#x5C06;&#x653E;&#x7F6E;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939; */</span>
+    <span class="hljs-string">&quot;rootDir&quot;</span>: <span class="hljs-string">&quot;./&quot;</span>,                       <span class="hljs-comment">/* &#x7528;&#x6765;&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5728;&#x6839;&#x76EE;&#x5F55;&#x67E5;&#x627E;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x5668;&#x53D1;&#x73B0;&#x4EE5;rootDir&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x6839;&#x76EE;&#x5F55;&#x67E5;&#x627E;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x5E76;&#x4E0D;&#x4F1A;&#x628A;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x52A0;&#x8F7D;&#x8FDB;&#x53BB;&#x7684;&#x8BDD;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x505C;&#x6B62;&#x7F16;&#x8BD1; */</span>
+    <span class="hljs-string">&quot;composite&quot;</span>: <span class="hljs-literal">true</span>,                     <span class="hljs-comment">/* &#x662F;&#x5426;&#x7F16;&#x8BD1;&#x6784;&#x5EFA;&#x5F15;&#x7528;&#x9879;&#x76EE;  */</span>
+    <span class="hljs-string">&quot;incremental&quot;</span>: <span class="hljs-literal">true</span>,                   <span class="hljs-comment">/* &#x662F;&#x5426;&#x542F;&#x7528;&#x589E;&#x91CF;&#x7F16;&#x8BD1;*/</span>
+    <span class="hljs-string">&quot;tsBuildInfoFile&quot;</span>: <span class="hljs-string">&quot;./&quot;</span>,               <span class="hljs-comment">/* &#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x589E;&#x91CF;&#x7F16;&#x8BD1;&#x4FE1;&#x606F; */</span>
+    <span class="hljs-string">&quot;removeComments&quot;</span>: <span class="hljs-literal">true</span>,                <span class="hljs-comment">/* removeComments&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5C06;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6CE8;&#x91CA;&#x5220;&#x6389;&#xFF0C;&#x8BBE;&#x4E3A;true&#x7684;&#x8BDD;&#x5373;&#x5220;&#x6389;&#x6CE8;&#x91CA;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false */</span>
+    <span class="hljs-string">&quot;noEmit&quot;</span>: <span class="hljs-literal">true</span>,                        <span class="hljs-comment">/* &#x4E0D;&#x751F;&#x6210;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E00;&#x822C;&#x6BD4;&#x8F83;&#x5C11;&#x7528; */</span>
+    <span class="hljs-string">&quot;importHelpers&quot;</span>: <span class="hljs-literal">true</span>,                 <span class="hljs-comment">/* importHelpers&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5F15;&#x5165;tslib&#x91CC;&#x7684;&#x8F85;&#x52A9;&#x5DE5;&#x5177;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false */</span>
+    <span class="hljs-string">&quot;downlevelIteration&quot;</span>: <span class="hljs-literal">true</span>,            <span class="hljs-comment">/* &#x5F53;target&#x4E3A;&apos;ES5&apos; or &apos;ES3&apos;&#x65F6;&#xFF0C;&#x4E3A;&apos;for-of&apos;, spread, and destructuring&apos;&#x4E2D;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x63D0;&#x4F9B;&#x5B8C;&#x5168;&#x652F;&#x6301; */</span>
+    <span class="hljs-string">&quot;isolatedModules&quot;</span>: <span class="hljs-literal">true</span>,               <span class="hljs-comment">/* isolatedModules&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5C06;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;true&#xFF0C;&#x5B83;&#x4E0D;&#x53EF;&#x4EE5;&#x548C;declaration&#x540C;&#x65F6;&#x8BBE;&#x5B9A; */</span>
+
+    <span class="hljs-comment">/* &#x4E25;&#x683C;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x9009;&#x9879; */</span>
+    <span class="hljs-string">&quot;strict&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">/* strict&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x542F;&#x52A8;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x4E3A;true&#x5219;&#x4F1A;&#x540C;&#x65F6;&#x5F00;&#x542F;&#x4E0B;&#x9762;&#x8FD9;&#x51E0;&#x4E2A;&#x4E25;&#x683C;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false */</span>,
+    <span class="hljs-string">&quot;noImplicitAny&quot;</span>: <span class="hljs-literal">true</span>,                 <span class="hljs-comment">/* noImplicitAny&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x4E3A;&#x4E00;&#x4E9B;&#x503C;&#x8BBE;&#x7F6E;&#x660E;&#x786E;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x9ED8;&#x8BA4;&#x8BA4;&#x4E3A;&#x8FD9;&#x4E2A;&#x503C;&#x4E3A;any&#xFF0C;&#x5982;&#x679C;noImplicitAny&#x7684;&#x503C;&#x4E3A;true&#x7684;&#x8BDD;,&#x5219;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x7684;&#x7C7B;&#x578B;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false */</span>
+    <span class="hljs-string">&quot;strictNullChecks&quot;</span>: <span class="hljs-literal">true</span>,              <span class="hljs-comment">/* strictNullChecks&#x4E3A;true&#x65F6;&#xFF0C;null&#x548C;undefined&#x503C;&#x4E0D;&#x80FD;&#x8D4B;&#x7ED9;&#x975E;&#x8FD9;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x522B;&#x7684;&#x7C7B;&#x578B;&#x4E5F;&#x4E0D;&#x80FD;&#x8D4B;&#x7ED9;&#x4ED6;&#x4EEC;&#xFF0C;&#x9664;&#x4E86;any&#x7C7B;&#x578B;&#x3002;&#x8FD8;&#x6709;&#x4E2A;&#x4F8B;&#x5916;&#x5C31;&#x662F;undefined&#x53EF;&#x4EE5;&#x8D4B;&#x503C;&#x7ED9;void&#x7C7B;&#x578B; */</span>
+    <span class="hljs-string">&quot;strictFunctionTypes&quot;</span>: <span class="hljs-literal">true</span>,           <span class="hljs-comment">/* strictFunctionTypes&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x53CC;&#x5411;&#x534F;&#x53D8;&#x68C0;&#x67E5; */</span>
+    <span class="hljs-string">&quot;strictBindCallApply&quot;</span>: <span class="hljs-literal">true</span>,           <span class="hljs-comment">/* &#x8BBE;&#x4E3A;true&#x540E;&#x4F1A;&#x5BF9;bind&#x3001;call&#x548C;apply&#x7ED1;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x7684;&#x68C0;&#x6D4B;&#x662F;&#x4E25;&#x683C;&#x68C0;&#x6D4B;&#x7684; */</span>
+    <span class="hljs-string">&quot;strictPropertyInitialization&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">/* &#x8BBE;&#x4E3A;true&#x540E;&#x4F1A;&#x68C0;&#x67E5;&#x7C7B;&#x7684;&#x975E;undefined&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x91CC;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x5F00;&#x542F;&#x8FD9;&#x9879;&#xFF0C;&#x9700;&#x8981;&#x540C;&#x65F6;&#x5F00;&#x542F;strictNullChecks&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false */</span>
+   <span class="hljs-string">&quot;noImplicitThis&quot;</span>: <span class="hljs-literal">true</span>,                <span class="hljs-comment">/* &#x5F53;this&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4E3A;any&#x7C7B;&#x578B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9519;&#x8BEF; */</span>
+    <span class="hljs-string">&quot;alwaysStrict&quot;</span>: <span class="hljs-literal">true</span>,                  <span class="hljs-comment">/* alwaysStrict&#x7684;&#x503C;&#x4E3A;true&#x6216;false&#xFF0C;&#x6307;&#x5B9A;&#x59CB;&#x7EC8;&#x4EE5;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x68C0;&#x67E5;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7F16;&#x8BD1;&#x4E4B;&#x540E;&#x7684;js&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x5165;&quot;use strict&quot;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7528;&#x6765;&#x544A;&#x8BC9;&#x6D4F;&#x89C8;&#x5668;&#x8BE5;js&#x4E3A;&#x4E25;&#x683C;&#x6A21;&#x5F0F; */</span>
+
+    <span class="hljs-comment">/* &#x989D;&#x5916;&#x7684;&#x68C0;&#x67E5; */</span>
+    <span class="hljs-string">&quot;noUnusedLocals&quot;</span>: <span class="hljs-literal">true</span>,                <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x6709;&#x5B9A;&#x4E49;&#x4E86;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E00;&#x70B9;&#x7684;&#x68C0;&#x6D4B;&#xFF0C;&#x4F7F;&#x7528;eslint&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x4E66;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x505A;&#x63D0;&#x793A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x914D;&#x5408;&#x4F7F;&#x7528;&#x3002;&#x5B83;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false */</span>
+    <span class="hljs-string">&quot;noUnusedParameters&quot;</span>: <span class="hljs-literal">true</span>,            <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x6709;&#x5728;&#x51FD;&#x6570;&#x4F53;&#x4E2D;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E5F;&#x53EF;&#x4EE5;&#x914D;&#x5408;eslint&#x6765;&#x505A;&#x68C0;&#x67E5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false */</span>
+    <span class="hljs-string">&quot;noImplicitReturns&quot;</span>: <span class="hljs-literal">true</span>,             <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x51FD;&#x6570;&#x662F;&#x5426;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x8BBE;&#x4E3A;true&#x540E;&#xFF0C;&#x5982;&#x679C;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x5219;&#x4F1A;&#x63D0;&#x793A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false */</span>
+    <span class="hljs-string">&quot;noFallthroughCasesInSwitch&quot;</span>: <span class="hljs-literal">true</span>,    <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x68C0;&#x67E5;switch&#x4E2D;&#x662F;&#x5426;&#x6709;case&#x6CA1;&#x6709;&#x4F7F;&#x7528;break&#x8DF3;&#x51FA;switch&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false */</span>
+
+    <span class="hljs-comment">/* &#x6A21;&#x5757;&#x89E3;&#x6790;&#x9009;&#x9879; */</span>
+    <span class="hljs-string">&quot;moduleResolution&quot;</span>: <span class="hljs-string">&quot;node&quot;</span>,            <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x9009;&#x62E9;&#x6A21;&#x5757;&#x89E3;&#x6790;&#x7B56;&#x7565;&#xFF0C;&#x6709;&apos;node&apos;&#x548C;&apos;classic&apos;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&apos; */</span>
+    <span class="hljs-string">&quot;baseUrl&quot;</span>: <span class="hljs-string">&quot;./&quot;</span>,                       <span class="hljs-comment">/* baseUrl&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x89E3;&#x6790;&#x975E;&#x76F8;&#x5BF9;&#x6A21;&#x5757;&#x540D;&#x79F0;&#x7684;&#x57FA;&#x672C;&#x76EE;&#x5F55;&#xFF0C;&#x76F8;&#x5BF9;&#x6A21;&#x5757;&#x4E0D;&#x4F1A;&#x53D7;baseUrl&#x7684;&#x5F71;&#x54CD; */</span>
+    <span class="hljs-string">&quot;paths&quot;</span>: {},                           <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x6A21;&#x5757;&#x540D;&#x79F0;&#x5230;&#x57FA;&#x4E8E;baseUrl&#x7684;&#x8DEF;&#x5F84;&#x6620;&#x5C04; */</span>
+    <span class="hljs-string">&quot;rootDirs&quot;</span>: [],                        <span class="hljs-comment">/* rootDirs&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x5217;&#x8868;&#xFF0C;&#x5728;&#x6784;&#x5EFA;&#x65F6;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5C06;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x8DEF;&#x5F84;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E2D; */</span>
+    <span class="hljs-string">&quot;typeRoots&quot;</span>: [],                       <span class="hljs-comment">/* typeRoots&#x7528;&#x6765;&#x6307;&#x5B9A;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x8DEF;&#x5F84;&#x5217;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x6B64;&#x9879;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5728;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x7684;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x624D;&#x4F1A;&#x88AB;&#x52A0;&#x8F7D; */</span>
+    <span class="hljs-string">&quot;types&quot;</span>: [],                           <span class="hljs-comment">/* types&#x7528;&#x6765;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x5305;&#x542B;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x7684;&#x6A21;&#x5757;&#x7684;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x624D;&#x4F1A;&#x88AB;&#x52A0;&#x8F7D;&#x8FDB;&#x6765; */</span>
+    <span class="hljs-string">&quot;allowSyntheticDefaultImports&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">/* &#x7528;&#x6765;&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x4ECE;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;&#x7684;&#x6A21;&#x5757;&#x4E2D;&#x9ED8;&#x8BA4;&#x5BFC;&#x5165; */</span>
+    <span class="hljs-string">&quot;esModuleInterop&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">/* &#x901A;&#x8FC7;&#x4E3A;&#x5BFC;&#x5165;&#x5185;&#x5BB9;&#x521B;&#x5EFA;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x5B9E;&#x73B0;CommonJS&#x548C;ES&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x4E92;&#x64CD;&#x4F5C;&#x6027; */</span>,
+    <span class="hljs-string">&quot;preserveSymlinks&quot;</span>: <span class="hljs-literal">true</span>,              <span class="hljs-comment">/* &#x4E0D;&#x628A;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x89E3;&#x6790;&#x4E3A;&#x5176;&#x771F;&#x5B9E;&#x8DEF;&#x5F84;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x4E0B;webpack&#x548C;nodejs&#x7684;symlink&#x76F8;&#x5173;&#x77E5;&#x8BC6; */</span>
+
+    <span class="hljs-comment">/* Source Map Options */</span>
+    <span class="hljs-string">&quot;sourceRoot&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,                      <span class="hljs-comment">/* sourceRoot&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x8C03;&#x8BD5;&#x5668;&#x5E94;&#x8BE5;&#x627E;&#x5230;TypeScript&#x6587;&#x4EF6;&#x800C;&#x4E0D;&#x662F;&#x6E90;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x4F1A;&#x88AB;&#x5199;&#x8FDB;.map&#x6587;&#x4EF6;&#x91CC; */</span>
+    <span class="hljs-string">&quot;mapRoot&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,                         <span class="hljs-comment">/* mapRoot&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x8C03;&#x8BD5;&#x5668;&#x627E;&#x5230;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x800C;&#x975E;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6307;&#x5B9A;map&#x6587;&#x4EF6;&#x7684;&#x6839;&#x8DEF;&#x5F84;&#xFF0C;&#x8BE5;&#x9009;&#x9879;&#x4F1A;&#x5F71;&#x54CD;.map&#x6587;&#x4EF6;&#x4E2D;&#x7684;sources&#x5C5E;&#x6027; */</span>
+    <span class="hljs-string">&quot;inlineSourceMap&quot;</span>: <span class="hljs-literal">true</span>,               <span class="hljs-comment">/* &#x6307;&#x5B9A;&#x662F;&#x5426;&#x5C06;map&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x548C;js&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x5728;&#x540C;&#x4E00;&#x4E2A;js&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x4E3A;true&#xFF0C;&#x5219;map&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x4EE5;//# sourceMappingURL=&#x7136;&#x540E;&#x62FC;&#x63A5;base64&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F62;&#x5F0F;&#x63D2;&#x5165;&#x5728;js&#x6587;&#x4EF6;&#x5E95;&#x90E8; */</span>
+    <span class="hljs-string">&quot;inlineSources&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x8FDB;&#x4E00;&#x6B65;&#x5C06;.ts&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x4E5F;&#x5305;&#x542B;&#x5230;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x4E2D; */</span>
+
+    <span class="hljs-comment">/* &#x5176;&#x4ED6;&#x9009;&#x9879; */</span>
+    <span class="hljs-string">&quot;experimentalDecorators&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x542F;&#x7528;&#x5B9E;&#x9A8C;&#x6027;&#x7684;&#x88C5;&#x9970;&#x5668;&#x7279;&#x6027; */</span>
+    <span class="hljs-string">&quot;emitDecoratorMetadata&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">/* &#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x4E3A;&#x88C5;&#x9970;&#x5668;&#x63D0;&#x4F9B;&#x5143;&#x6570;&#x636E;&#x652F;&#x6301;&#xFF0C;&#x5173;&#x4E8E;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x4E5F;&#x662F;ES6&#x7684;&#x65B0;&#x6807;&#x51C6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Reflect&#x63D0;&#x4F9B;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;Reflect&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x9700;&#x8981;&#x5F15;&#x5165;ES2015.Reflect&#x8FD9;&#x4E2A;&#x5E93; */</span>
+  }
+
+}
+</code></pre>
+<h2 id="&#x56DB;&#x3001;&#x5E38;&#x89C1;&#x914D;&#x7F6E;&#x793A;&#x4F8B;">&#x56DB;&#x3001;&#x5E38;&#x89C1;&#x914D;&#x7F6E;&#x793A;&#x4F8B;</h2>
+<p>Tsconfig.json&#x793A;&#x4F8B;.</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;include&quot;</span>: [<span class="hljs-string">&quot;src/**/*&quot;</span>],
+  <span class="hljs-string">&quot;exclude&quot;</span>: [<span class="hljs-string">&quot;no_modules&quot;</span>],
+  <span class="hljs-string">&quot;compilerOptions&quot;</span>:{
+    <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;es2015&quot;</span>,  <span class="hljs-comment">/* &#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x7248;&#x672C;*/</span>
+    <span class="hljs-string">&quot;module&quot;</span>: <span class="hljs-string">&quot;ESNext&quot;</span>, <span class="hljs-comment">/* &#x7528;&#x6765;&#x6307;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5757;&#x6807;&#x51C6;*/</span>
+    <span class="hljs-string">&quot;noEmitOnError&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">/*&#x7F16;&#x8BD1;&#x7684;&#x6E90;&#x6587;&#x4EF6;&#x4E2D;&#x5B58;&#x5728;&#x9519;&#x8BEF;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x518D;&#x8F93;&#x51FA;&#x7F16;&#x8BD1;&#x7ED3;&#x679C;&#x6587;&#x4EF6;*/</span>
+    <span class="hljs-comment">//&quot;lib&quot;:[], /*&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x8981;&#x5305;&#x542B;&#x5728;&#x7F16;&#x8BD1;&#x4E2D;&#x7684;&#x5E93;&#x6587;&#x4EF6;*/</span>
+    <span class="hljs-string">&quot;allowJS&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-string">&quot;outDir&quot;</span>: <span class="hljs-string">&quot;src&quot;</span>,
+    <span class="hljs-string">&quot;rootDir&quot;</span>: <span class="hljs-string">&quot;./&quot;</span>,
+    <span class="hljs-string">&quot;removeComments&quot;</span>:<span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;importHelpers&quot;</span>:<span class="hljs-literal">true</span>,
+
+    <span class="hljs-string">&quot;strict&quot;</span>:<span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;noImplicitAny&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;strictNullChecks&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;noImplicitThis&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;baseUrl&quot;</span>: <span class="hljs-string">&quot;./&quot;</span>,
+    <span class="hljs-string">&quot;paths&quot;</span>: {},
+    <span class="hljs-string">&quot;experimentalDecorators&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;emitDecoratorMetadata&quot;</span>: <span class="hljs-literal">true</span>
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="快速入门.html" class="navigation navigation-prev " aria-label="Previous page: 第一章:Typescript快速入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="webpack&ts.html" class="navigation navigation-next " aria-label="Next page:  2.Webpack打包ts代码">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.Tsconfig详解","level":"1.2.1","depth":2,"next":{"title":" 2.Webpack打包ts代码","level":"1.2.2","depth":2,"path":"Introduction/webpack&ts.md","ref":"./Introduction/webpack&ts.md","articles":[]},"previous":{"title":"第一章:Typescript快速入门","level":"1.2","depth":1,"path":"Introduction/快速入门.md","ref":"./Introduction/快速入门.md","articles":[{"title":"1.Tsconfig详解","level":"1.2.1","depth":2,"path":"Introduction/tsconfig.md","ref":"./Introduction/tsconfig.md","articles":[]},{"title":" 2.Webpack打包ts代码","level":"1.2.2","depth":2,"path":"Introduction/webpack&ts.md","ref":"./Introduction/webpack&ts.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","code","expandable-chapters-small","splitter","-lunr","-search","search-pro","sharing","sharing-plus","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":true,"facebook":true,"weibo":true,"instapaper":false,"twitter":true,"vk":false,"pocket":true,"google":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"赵彦伟<panda_kings@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeScript入门教程","gitbook":"*"},"file":{"path":"Introduction/tsconfig.md","mtime":"2021-03-02T06:41:41.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-05T13:10:54.238Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

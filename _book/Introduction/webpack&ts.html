@@ -1,0 +1,600 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title> 2.Webpack打包ts代码 · TypeScript入门教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="赵彦伟<panda_kings@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../BasicTypes/basetype.html" />
+    
+    
+    <link rel="prev" href="tsconfig.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    课程简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="快速入门.html">
+            
+                <a href="快速入门.html">
+            
+                    
+                    第一章:Typescript快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="tsconfig.html">
+            
+                <a href="tsconfig.html">
+            
+                    
+                    1.Tsconfig详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="webpack&ts.html">
+            
+                <a href="webpack&ts.html">
+            
+                    
+                     2.Webpack打包ts代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../BasicTypes/basetype.html">
+            
+                <a href="../BasicTypes/basetype.html">
+            
+                    
+                    第二章: 基础类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    第三章: 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Classes/class.html">
+            
+                <a href="../Classes/class.html">
+            
+                    
+                    第四章: 类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Classes/inheritance.html">
+            
+                <a href="../Classes/inheritance.html">
+            
+                    
+                    1. 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Classes/modifiers.html">
+            
+                <a href="../Classes/modifiers.html">
+            
+                    
+                    2.常用修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Classes/abstract.html">
+            
+                <a href="../Classes/abstract.html">
+            
+                    
+                    3.抽象类和类方法重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../interface.html">
+            
+                <a href="../interface.html">
+            
+                    
+                    第五章:接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../generics.html">
+            
+                <a href="../generics.html">
+            
+                    
+                    第六章: 泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../namespace.html">
+            
+                <a href="../namespace.html">
+            
+                    
+                    第七章: 模块和命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../decorators.html">
+            
+                <a href="../decorators.html">
+            
+                    
+                    第八章:装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." > 2.Webpack打包ts代码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="webpack&#x6253;&#x5305;ts&#x6587;&#x4EF6;">Webpack&#x6253;&#x5305;ts&#x6587;&#x4EF6;</h1>
+<h2 id="&#x4E00;&#x3001;&#x521D;&#x6B65;&#x6253;&#x5305;&#x9879;&#x76EE;">&#x4E00;&#x3001;&#x521D;&#x6B65;&#x6253;&#x5305;&#x9879;&#x76EE;</h2>
+<p>&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x6267;&#x884C;&#x547D;&#x4EE4;: <strong>npm init -y</strong>&#x521B;&#x5EFA;package.json&#x7BA1;&#x7406;&#x9879;&#x76EE;.&#x7136;&#x540E;&#x5B89;&#x88C5;webpack &#x96C6;&#x6210;ts&#x7684;&#x4F9D;&#x8D56;:</p>
+<pre><code class="lang-shell">npm install -D webpack webpack-cli typescript ts-loader
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x5728;package.json&#x7684;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#x4E0B;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x8FDB;&#x53BB;&#x521A;&#x624D;&#x5B89;&#x88C5;&#x7684;&#x4F9D;&#x8D56;.</p>
+<p><img src="imgs/5.png" alt="res" style="zoom:50%;"></p>
+<p>&#x7136;&#x540E;&#x518D;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;webpack.config.js&#x6587;&#x4EF6;,&#x5BF9;webpack&#x8FDB;&#x884C;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-json"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+
+
+<span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x6A21;&#x5F0F;</span>
+    mode: <span class="hljs-string">&apos;development&apos;</span>, <span class="hljs-comment">// &#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x6A21;&#x5F0F;, production &#x751F;&#x4EA7;&#x6A21;&#x5F0F;</span>
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x5165;&#x53E3;&#x76EE;&#x5F55;</span>
+    entry: <span class="hljs-string">&quot;./src/helloworld.ts&quot;</span>,
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x8F93;&#x51FA;</span>
+    output: {
+        <span class="hljs-comment">// &#x914D;&#x7F6E;&#x591A;&#x51FA;&#x53E3;&#x6587;&#x4EF6;&#x751F;&#x6210;</span>
+        filename: <span class="hljs-string">&apos;[name].js&apos;</span>, <span class="hljs-comment">// &#x8F93;&#x51FA;&#x7684;js</span>
+        path: path.resolve(__dirname, <span class="hljs-string">&apos;dist&apos;</span>) <span class="hljs-comment">// &#x9700;&#x8981;&#x5BFC;&#x5165;node&#x7684;path&#x6A21;&#x5757;,&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x76EE;&#x5F55;&#x5728;dist</span>
+    },
+    <span class="hljs-comment">// &#x914D;&#x7F6E;load ,&#x8BA9;webpack&#x5904;&#x7406;&#x8D39;js&#x7684;&#x8D44;&#x6E90;&#x5982;:css img &#x7B49;&#x7B49;</span>
+    <span class="hljs-built_in">module</span>: {
+        <span class="hljs-comment">// &#x6307;&#x5B9A;&#x52A0;&#x8F7D;&#x89C4;&#x5219;</span>
+        rules: [
+            {
+                test: <span class="hljs-regexp">/\.ts$/</span>,
+                use: <span class="hljs-string">&apos;ts-loader&apos;</span>,
+                exclude: <span class="hljs-regexp">/node_modules/</span>
+            }
+        ]
+    },
+      <span class="hljs-comment">// &#x914D;&#x7F6E;&#x8981;&#x5F15;&#x7528;&#x7684;&#x6A21;&#x5757;</span>
+      resolve:{
+      extensions:[<span class="hljs-string">&apos;.ts&apos;</span>, <span class="hljs-string">&apos;.tsx&apos;</span>, <span class="hljs-string">&apos;js&apos;</span>]
+    }
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x63D2;&#x4EF6;</span>
+    plugins: []
+}
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;package.json&#x4E2D;&#x6DFB;&#x52A0;&#x6253;&#x5305;&#x547D;&#x4EE4;,&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x6267;&#x884C;: <strong>npm run build</strong> &#x8FDB;&#x884C;&#x6253;&#x5305;,&#x4F1A;&#x5728;dist&#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210;&#x6253;&#x5305;&#x540E;&#x7684;&#x6587;&#x4EF6;.</p>
+<p><img src="imgs/6.png" alt="res" style="zoom:50%;"></p>
+<h2 id="&#x4E8C;&#x3001;&#x4F7F;&#x7528;webpack&#x76F8;&#x5173;&#x63D2;&#x4EF6;&#x6253;&#x5305;&#x9879;&#x76EE;">&#x4E8C;&#x3001;&#x4F7F;&#x7528;WebPack&#x76F8;&#x5173;&#x63D2;&#x4EF6;&#x6253;&#x5305;&#x9879;&#x76EE;</h2>
+<h3 id="1-html-webpack-plugin">1. Html-webpack-plugin</h3>
+<p> Html-webpack-plugin&#x80FD;&#x591F;&#x8BA9;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x521B;&#x5EFA;&#x9875;&#x9762;,&#x907F;&#x514D;&#x91CD;&#x590D;&#x7684;&#x624B;&#x5DE5;&#x521B;&#x5EFA;.</p>
+<p>&#x7EC8;&#x7AEF;&#x4E0B;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x5B89;&#x88C5;:</p>
+<pre><code class="lang-shell">npm install -D html-webpack-plugin
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x540E;&#x5728;webpack.config.js &#x4E2D;&#x8FDB;&#x884C;&#x5F15;&#x7528;, &#x5E76;&#x5728;src &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x6A21;&#x677F;index.html</p>
+<p><img src="imgs/7.png" alt="res" style="zoom:40%;"></p>
+<h3 id="2-webpack-dev-server&#x548C;clean-webpack-plugin">2. Webpack-dev-server&#x548C;clean-webpack-plugin</h3>
+<p>Webpack-dev-server&#x80FD;&#x68C0;&#x6D4B;&#x7F51;&#x9875;&#x662F;&#x5426;&#x6709;&#x6539;&#x52A8;, &#x6539;&#x52A8;&#x5C31;&#x81EA;&#x52A8;&#x5237;&#x65B0;; clean-webpack-plugin&#x662F;&#x81EA;&#x52A8;&#x6E05;&#x9664;&#x6253;&#x5305;&#x540E;&#x7684;&#x65E7;&#x6587;&#x4EF6;,&#x4FDD;&#x8BC1;&#x6253;&#x5305;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x65F6;&#x6700;&#x65B0;&#x7684;</p>
+<p>&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x9875;&#x9762;&#x70ED;&#x52A0;&#x8F7D;&#x670D;&#x52A1;&#x5668;, </p>
+<pre><code class="lang-shell">npm i -D webpack-dev-server clean-webpack-plugin
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#x5728;package.json &#x6587;&#x4EF6;&#x4E0B;&#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x7684;&#x547D;&#x4EE4;, &#x7136;&#x540E;&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x6267;&#x884C;: <strong>npm start</strong> &#x81EA;&#x52A8;&#x6253;&#x5F00;&#x6253;&#x5305;&#x540E;&#x7684;&#x7F51;&#x9875;</p>
+<pre><code class="lang-shell"># MAC
+&quot;start&quot;: &quot;webpack serve --open &apos;google chrome&apos;&quot;
+# Window
+&quot;start&quot;: &quot;webpack serve --open chrome.exe&quot;
+</code></pre>
+<p>&#x4FEE;&#x6539;webpack.config.js &#x6587;&#x4EF6;,&#x5F15;&#x5165;&#x5E76;&#x4F7F;&#x7528;clean-webpack-plugin.</p>
+<p><img src="imgs/8.png" alt="res" style="zoom:30%;"></p>
+<h3 id="3-&#x4F7F;&#x7528;babel-&#x89E3;&#x51B3;&#x517C;&#x5BB9;">3. &#x4F7F;&#x7528;babel &#x89E3;&#x51B3;&#x517C;&#x5BB9;</h3>
+<p>&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x76F8;&#x5173;&#x4F9D;&#x8D56;:</p>
+<pre><code class="lang-shell">npm install -D @babel/core @babel/preset-env babel-loader core-js
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x540E;&#x4FEE;&#x6539;webpack.config.js,&#x4FEE;&#x6539;&#x540E;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-json"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-comment">// &#x5F15;&#x5165;</span>
+<span class="hljs-keyword">const</span> HTMLWebPackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;html-webpack-plugin&apos;</span>)
+
+<span class="hljs-keyword">const</span> { CleanWebpackPlugin } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;clean-webpack-plugin&apos;</span>)
+
+<span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x6A21;&#x5F0F;</span>
+    mode: <span class="hljs-string">&apos;development&apos;</span>, <span class="hljs-comment">// &#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x6A21;&#x5F0F;, production &#x751F;&#x4EA7;&#x6A21;&#x5F0F;</span>
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x5165;&#x53E3;&#x76EE;&#x5F55;</span>
+    entry: <span class="hljs-string">&quot;./src/helloworld.ts&quot;</span>,
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x8F93;&#x51FA;</span>
+    output: {
+        <span class="hljs-comment">// &#x914D;&#x7F6E;&#x591A;&#x51FA;&#x53E3;&#x6587;&#x4EF6;&#x751F;&#x6210;</span>
+        filename: <span class="hljs-string">&apos;[name].js&apos;</span>, <span class="hljs-comment">// &#x8F93;&#x51FA;&#x7684;js</span>
+        path: path.resolve(__dirname, <span class="hljs-string">&apos;dist&apos;</span>), <span class="hljs-comment">// &#x9700;&#x8981;&#x5BFC;&#x5165;node&#x7684;path&#x6A21;&#x5757;,&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x76EE;&#x5F55;&#x5728;dist</span>
+        <span class="hljs-comment">// &#x544A;&#x8BC9;webpack &#x4E0D;&#x9002;&#x7528;&#x7BAD;&#x5934;&#x51FD;&#x6570;</span>
+        environment:{
+            arrowFunction: <span class="hljs-literal">false</span>
+        }
+
+    },
+    <span class="hljs-comment">// &#x914D;&#x7F6E;load ,&#x8BA9;webpack&#x5904;&#x7406;&#x8D39;js&#x7684;&#x8D44;&#x6E90;&#x5982;:css img &#x7B49;&#x7B49;</span>
+    <span class="hljs-built_in">module</span>: {
+        <span class="hljs-comment">// &#x6307;&#x5B9A;&#x52A0;&#x8F7D;&#x89C4;&#x5219;</span>
+        rules: [
+            {
+                test: <span class="hljs-regexp">/\.ts$/</span>,
+                use: [
+                    <span class="hljs-comment">// &#x914D;&#x7F6E;babel,&#x6309;&#x9700;&#x914D;&#x7F6E;</span>
+                    {
+                        <span class="hljs-comment">// &#x914D;&#x7F6E;&#x52A0;&#x8F7D;&#x5668;</span>
+                        loader: <span class="hljs-string">&quot;babel-loader&quot;</span>,
+                        <span class="hljs-comment">// &#x914D;&#x7F6E;babel</span>
+                        options: {
+                            <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x9884;&#x5B9A;&#x4E49;&#x73AF;&#x5883;</span>
+                            presets: [
+                                [
+                                    <span class="hljs-comment">// &#x6307;&#x5B9A;&#x73AF;&#x5883;&#x63D2;&#x4EF6;</span>
+                                    <span class="hljs-string">&quot;@babel/preset-env&quot;</span>,
+                                    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x4FE1;&#x606F;</span>
+                                    {
+                                        <span class="hljs-comment">// &#x914D;&#x7F6E;&#x9879;&#x76EE;&#x8981;&#x517C;&#x5BB9;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;</span>
+                                        targets: {
+                                            <span class="hljs-string">&quot;chrome&quot;</span>: <span class="hljs-string">&quot;88&quot;</span>,
+                                            <span class="hljs-string">&apos;is&apos;</span>:<span class="hljs-string">&quot;11&quot;</span>
+                                        },
+                                        <span class="hljs-comment">// &#x7248;&#x672C;&#x8981;&#x548C;&#x4E0B;&#x8F7D;&#x7684;&#x5927;&#x7248;&#x672C;&#x4E00;&#x81F4;</span>
+                                        <span class="hljs-string">&quot;corejs&quot;</span>: <span class="hljs-string">&quot;3&quot;</span>,
+                                        <span class="hljs-comment">// &#x4F7F;&#x7528;corejs&#x7684;&#x65B9;&#x5F0F;&#x662F;: &#x6309;&#x9700;&#x52A0;&#x8F7D;</span>
+                                        <span class="hljs-string">&quot;useBuiltIns&quot;</span>: <span class="hljs-string">&quot;usage&quot;</span>
+                                    }
+                                ]
+                            ]
+                        }
+                    },
+                    <span class="hljs-string">&apos;ts-loader&apos;</span>
+                ],
+                exclude: <span class="hljs-regexp">/node_modules/</span>
+            }
+        ]
+    },
+    resolve: {
+        extensions:[<span class="hljs-string">&apos;.ts&apos;</span>, <span class="hljs-string">&apos;.tsx&apos;</span>, <span class="hljs-string">&apos;.js&apos;</span>]
+    },
+    <span class="hljs-comment">// &#x914D;&#x7F6E;&#x63D2;&#x4EF6;</span>
+    plugins: [
+
+        <span class="hljs-keyword">new</span> CleanWebpackPlugin(),
+        <span class="hljs-comment">// &#x521B;&#x5EFA;htmlwebpackplugin&#x5BF9;&#x8C61;</span>
+        <span class="hljs-keyword">new</span> HTMLWebPackPlugin({
+            <span class="hljs-comment">// z&#x6307;&#x5B9A;&#x6807;&#x9898;</span>
+            title: <span class="hljs-string">&quot;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x9898;&quot;</span>,
+            <span class="hljs-comment">// &#x6307;&#x5B9A;&#x6A21;&#x677F;</span>
+            template: <span class="hljs-string">&quot;./src/index.html&quot;</span>
+        })
+
+    ]
+}
+</code></pre>
+<p>&#x81EA;&#x6B64;&#x6211;&#x4EEC;&#x7684;&#x524D;&#x671F;&#x51C6;&#x5907;&#x5168;&#x90E8;&#x5B8C;&#x6210;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tsconfig.html" class="navigation navigation-prev " aria-label="Previous page: 1.Tsconfig详解">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../BasicTypes/basetype.html" class="navigation navigation-next " aria-label="Next page: 第二章: 基础类型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":" 2.Webpack打包ts代码","level":"1.2.2","depth":2,"next":{"title":"第二章: 基础类型","level":"1.3","depth":1,"path":"BasicTypes/basetype.md","ref":"./BasicTypes/basetype.md","articles":[]},"previous":{"title":"1.Tsconfig详解","level":"1.2.1","depth":2,"path":"Introduction/tsconfig.md","ref":"./Introduction/tsconfig.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","code","expandable-chapters-small","splitter","-lunr","-search","search-pro","sharing","sharing-plus","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":true,"facebook":true,"weibo":true,"instapaper":false,"twitter":true,"vk":false,"pocket":true,"google":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"赵彦伟<panda_kings@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeScript入门教程","gitbook":"*"},"file":{"path":"Introduction/webpack&ts.md","mtime":"2021-03-02T09:16:45.610Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-05T13:10:54.238Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

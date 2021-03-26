@@ -1,0 +1,27 @@
+{
+    "title": "TypeScript入门教程",
+    "author": "赵彦伟<panda_kings@163.com>",
+    "plugins": [
+        "back-to-top-button",
+        "chapter-fold",
+        "code",
+        "expandable-chapters-small",
+        "splitter",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "sharing",
+        "sharing-plus"
+    ],
+    "pluginsConfig": {
+        "sharing": {
+            "douban": true,
+            "facebook": true,
+            "google": true,
+            "pocket": true,
+            "qq": true,
+            "twitter": true,
+            "weibo": true
+        }
+    }
+}
